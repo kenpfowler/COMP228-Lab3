@@ -1,15 +1,36 @@
+### Lab 3 : Using Inheritance and Polymorphism.
+### Due Date:  End of Week 6,  Sunday 20 June at 11:59 pm.
+
+Purpose: The purpose of this Lab assignment is to:
+* Practice the use of Inheritance
+* Practice the use of Polymorphism.
+
+Be sure to read the following general instructions carefully:
+You must name your Eclipse projects according to the following rule:
+* YourFullName_COMP228Labnumber
+* Each exercise should be placed in a separate package named exercise1, exercise2, etc.
+
+Submit your assignment in a zip file that is named according to the following rule:
+* YourLastName_COMP228Labnumber.zip
+
+Apply the naming conventions for variables, methods, classes, and packages:
+* variable names start with a lowercase character
+* classes start with an uppercase character
+* packages use only lowercase characters
+* methods start with a lowercase character
+
 ### Exercise 1
 Write a Java application that implements different types of bank accounts for customers.
-- [ ] Let Account be an abstract superclass 
+- [x] Let Excercise1.Account be an abstract superclass 
   
-- [ ] Chequing and Savings two of its subclasses that describe respectively
+- [x] Chequing and Savings two of its subclasses that describe respectively
   checking account and savings account.
 
-- [ ] The Account class defines an instance variable of type of int to describes the type of account number,
+- [x] The Excercise1.Account class defines an instance variable of type of int to describes the type of account number,
   type String to describe the type of account
   and an instance variable of type double to hold the balanceAmount of that account.
 
-- [ ] Implement the get methods for both variables of class Account. 
+- [x] Implement the get methods for both variables of class Excercise1.Account. 
   Declare also two abstract methods named setBalancedAmount()
   and displayInfo() for this class.
 
@@ -22,7 +43,7 @@ Write a Java application that implements different types of bank accounts for cu
   Then, will create the appropriate object (chequing and savings) and display the account information.
 
 - [ ] As you create each account object, 
-  place an Account reference to each new Account object into an array. 
+  place an Excercise1.Account reference to each new Excercise1.Account object into an array. 
   Each class has its own setBalancedAmount() method. 
   Write a polymorphic screen manager that walks through the array 
   sending setBalancedAmount messages to each object in the array 
