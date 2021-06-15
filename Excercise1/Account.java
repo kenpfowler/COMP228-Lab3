@@ -3,10 +3,11 @@ package Excercise1;
 //create abstract account class
 public abstract class Account
 {
+
     //create private fields
-    private int _number;
-    private String _name;
-    private double _balance;
+    protected static int _number = 1000;
+    protected String _name;
+    protected double _balance;
 
     public int getNumber() {
         return _number;
@@ -15,12 +16,16 @@ public abstract class Account
     public String getName() {
         return _name;
     }
-
-    public abstract double getBalance();
-
-    public abstract void setBalance(double _balance);
-
-    public void displayInfo() {
-        System.out.printf("Here's your account information:\nAccount Number: %d\nAccount Type %s\nAccount Balance: %d", getNumber(), getName(), getBalance());
+    public Account()
+    {
+        this._number += 1;
     }
+
+    public double getBalance() {
+        return this._balance;
+    }
+
+    abstract void setBalance(double _balance);
+
+    abstract void displayInfo();
 }

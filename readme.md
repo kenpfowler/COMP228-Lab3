@@ -34,7 +34,7 @@ Write a Java application that implements different types of bank accounts for cu
   Declare also two abstract methods named setBalancedAmount()
   and displayInfo() for this class.
 
-- [ ] The Checking and Savings class should implement setBalancedAmount()
+- [x] The Checking and Savings class should implement setBalancedAmount()
   and display methods by setting the appropriate balance amount
   and display the information for each account type.
 
