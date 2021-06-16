@@ -49,18 +49,18 @@ Write a Java application that implements different types of bank accounts for cu
   sending setBalancedAmount messages to each object in the array 
   and displaying this information on the screen. 
   (3 marks)
-
+  
 ### Exercise 2
 
-- [ ] Create an abstract class called MobileDeveloper. 
+- [x] Create an abstract class called MobileDeveloper. 
   The MobileDeveloper class includes a name for the developer
   and a boolean value representing the status (full-time, part-time).
 
-- [ ] Include an abstract method to determine the salary, 
+- [x] Include an abstract method to determine the salary, 
   with full-time mobile developers getting a base salary of $6000 
   and part-time mobile developers getting $30 per hour.
 
-- [ ] Create two subclasses called FullTimeDeveloper, PartTimeDeveloper. 
+- [x] Create two subclasses called FullTimeDeveloper, PartTimeDeveloper. 
   Create a console application that demonstrates how to create objects of both subclasses. 
   Allow the user to choose mobile developer type and enter the number of hours for the part-time developers.
   (3 marks)
