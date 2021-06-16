@@ -10,7 +10,7 @@ public abstract class Account
     protected double _balance;
 
     public int getNumber() {
-        return _number;
+        return this._number;
     }
 
     public String getName() {
@@ -27,5 +27,5 @@ public abstract class Account
 
     abstract void setBalance(double _balance);
 
-    abstract void displayInfo();
+    abstract String displayInfo();
 }

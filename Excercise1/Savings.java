@@ -1,10 +1,13 @@
 package Excercise1;
 
 public class Savings extends Account {
+
+    protected int _savingsAccountNumber;
+
     public Savings(double inputBalance)
     {
         this._name = "Savings";
-        this._number =  getNumber();
+        this._savingsAccountNumber =  super.getNumber();
         this._balance = inputBalance;
     }
 
@@ -14,7 +17,7 @@ public class Savings extends Account {
     }
 
     @Override
-    public void displayInfo() {
-        System.out.printf("\nHere's your account information:\nAccount Number: %d\nAccount Type %s\nAccount Balance: %f\n", getNumber(), getName(), getBalance());
+    public String displayInfo() {
+        return String.format("\nHere's your account information:\nAccount Number: %d\nAccount Type: %s\nAccount Balance: %f\n", this._savingsAccountNumber, getName(), getBalance());
     }
 }
