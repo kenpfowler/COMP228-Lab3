@@ -1,29 +1,18 @@
 package Excercise1;
 
+//import swing library and event listeners to create UI
 import javax.swing.*;
-import javax.swing.border.EmptyBorder;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
 
-//        - [ ] Write a driver class named AccountTest to test this hierarchy.
-//        This application should ask the user to enter the type of account and its balance amount.
-//        Then, will create the appropriate object (chequing and savings) and display the account information.
-//
-//        - [ ] As you create each account object,
-//        place an Excercise1.Account reference to each new Excercise1.Account object into an array.
-//        Each class has its own setBalancedAmount() method.
-//        Write a polymorphic screen manager that walks through the array
-//        sending setBalancedAmount messages to each object in the array
-//        and displaying this information on the screen.
-//        (3 marks)
-
-
+//create GUI class
 public class AccountTest extends JFrame {
 
+    //array to store
     ArrayList<Account> accounts = new ArrayList();
 
+    //variables to control GUI
     private JPanel frame;
     private JRadioButton rbtnChequing;
     private JRadioButton rbtnSavings;
@@ -34,6 +23,7 @@ public class AccountTest extends JFrame {
     private JButton btnCreate;
     private JButton editBalancesButton;
 
+    //constructor for GUI
     public AccountTest(String title)
     {
         super(title);
@@ -41,6 +31,7 @@ public class AccountTest extends JFrame {
         this.setContentPane(frame);
         this.pack();
 
+        //button to create account
         btnCreate.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -52,13 +43,14 @@ public class AccountTest extends JFrame {
                 {
                     accounts.add(new Savings(balance()));
                 }
-
+                //display account information
                 String message = "Account Created:\n" + accounts.get(accounts.size() - 1).displayInfo();
                 JOptionPane.showMessageDialog(frame, message);
                 txtBalance.setText("");
             }
         });
 
+        //button to edit existing account
         editBalancesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -74,9 +66,8 @@ public class AccountTest extends JFrame {
             }
         });
     }
-    //accept input for account type and balance
-    //create account
 
+    //check which button is clicked
     public boolean isChequing()
     {
         if (rbtnChequing.isSelected())
@@ -88,13 +79,13 @@ public class AccountTest extends JFrame {
             return false;
         }
     }
-
+    //get the balance entered
     public double balance()
     {
      String entry = txtBalance.getText();
      return Double.parseDouble(entry);
     }
-
+    //display the GUI
     public static void main(String[] args)
     {
         JFrame frame = new AccountTest("Account Manager");

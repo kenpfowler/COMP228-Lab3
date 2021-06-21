@@ -1,9 +1,12 @@
 package Excercise2;
 
+//create class that extends mobile developer
 public class PartTimeDeveloper extends MobileDeveloper{
+    //create instance variables
     private int _hours;
     private final int PAY_PER_HOUR = 30;
 
+    //create constructor
     public PartTimeDeveloper(String name, int hours)
     {
         super(name);
@@ -11,11 +14,13 @@ public class PartTimeDeveloper extends MobileDeveloper{
         this._hours = hours;
     }
 
+    //calculate salary
     @Override public int calculateSalary()
     {
-        return _hours * PAY_PER_HOUR;
+        return this._hours * PAY_PER_HOUR;
     };
 
+    //print out part time developer
     @Override
     public String toString() {
         return "\nPartTimeDeveloper{" +

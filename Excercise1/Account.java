@@ -7,8 +7,15 @@ public abstract class Account
     //create private fields
     protected static int _number = 1000;
     protected String _name;
-    protected double _balance;
+    protected double _balanceAmount;
 
+    //create constructor
+    public Account()
+    {
+        this._number += 1;
+    }
+
+    //create getters
     public int getNumber() {
         return this._number;
     }
@@ -16,15 +23,12 @@ public abstract class Account
     public String getName() {
         return _name;
     }
-    public Account()
-    {
-        this._number += 1;
-    }
 
     public double getBalance() {
-        return this._balance;
+        return this._balanceAmount;
     }
 
+    //create abstract methods
     abstract void setBalance(double _balance);
 
     abstract String displayInfo();

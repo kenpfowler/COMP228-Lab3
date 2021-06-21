@@ -38,11 +38,11 @@ Write a Java application that implements different types of bank accounts for cu
   and display methods by setting the appropriate balance amount
   and display the information for each account type.
 
-- [ ] Write a driver class named AccountTest to test this hierarchy.
+- [x] Write a driver class named AccountTest to test this hierarchy.
   This application should ask the user to enter the type of account and its balance amount. 
   Then, will create the appropriate object (chequing and savings) and display the account information.
 
-- [ ] As you create each account object, 
+- [x] As you create each account object, 
   place an Excercise1.Account reference to each new Excercise1.Account object into an array. 
   Each class has its own setBalancedAmount() method. 
   Write a polymorphic screen manager that walks through the array 
@@ -66,29 +66,29 @@ Write a Java application that implements different types of bank accounts for cu
   (3 marks)
   
 ### Exercise 3
-- [ ] Centen bank provides mortgages for individuals and businesses up to $800,000.
+- [x] Centen bank provides mortgages for individuals and businesses up to $800,000.
   Write a Java application that keeps track of mortgages
   and computes the total amount owed at any time (mortgage amount + interest).
 
 ##### Design the following classes to implement your application:
 
-- [ ] Mortgage – an abstract class that implements the MortgageConstants interface. 
+- [x] Mortgage – an abstract class that implements the MortgageConstants interface. 
   A Mortgage includes a mortgage number, customer name, amount of mortgage, interest rate, and term.
 
-- [ ] Don’t allow mortgage amounts over $800,000. 
+- [x] Don’t allow mortgage amounts over $800,000. 
   Force any mortgage term that is not defined in the MortgageConstants interface to a short-term,
   one year loan. Create a getMortgageInfo method to display all the mortgage data.
 
-- [ ] MortgageConstants – includes constant values for short-term (one year), medium-term (three years) and long-term (5 years) mortgages. 
+- [x] MortgageConstants – includes constant values for short-term (one year), medium-term (three years) and long-term (5 years) mortgages. 
   It also contains constants for bank name and the maximum mortgage amount.
 
-- [ ] BusinessMortgage – extends Mortgage. 
+- [x] BusinessMortgage – extends Mortgage. 
   Its constructor sets the interest rate to 2% over the current prime rate.
 
-- [ ] PersonalMortgage - extends Mortgage. 
+- [x] PersonalMortgage - extends Mortgage. 
   Its constructor sets the interest rate to 3% over the current prime rate.
 
-- [ ] ProcessMortgage – a main class that create an array of 3 mortgages. 
+- [x] ProcessMortgage – a main class that create an array of 3 mortgages. 
   Prompt the user for the current interest rate. 
   Then in a loop prompts the user for a mortgage type and all relevant information for that mortgage. 
   Store the created Mortgage objects in the array. When data entry is complete, display all mortgages.

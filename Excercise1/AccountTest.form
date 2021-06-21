@@ -26,6 +26,7 @@
           </grid>
         </constraints>
         <properties>
+          <selected value="true"/>
           <text value="Chequing"/>
         </properties>
       </component>
